@@ -1,0 +1,213 @@
+/* Custom CSS for FABLAB UFPB Presentation */
+
+/* Variables */
+:root {
+  --fablab-green: #8BC34A;
+  --fablab-blue: #4FC3F7;
+  --fablab-dark: #333333;
+  --fablab-light: #f8f9fa;
+  --fablab-accent: #FF6B6B;
+}
+
+/* Title Slide */
+.title-slide {
+  text-align: center;
+}
+
+.title-slide h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.title-slide .author {
+  font-size: 2em;
+  margin-bottom: 0.25em;
+  color: white;
+}
+
+.title-slide .institute {
+  font-size: 1.5em;
+  color: white;
+  opacity: 0.9;
+}
+
+/* Final Slide */
+.final-slide {
+  text-align: center;
+}
+
+.final-slide h1 {
+  font-size: 4em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Headers */
+.reveal h1 {
+  color: var(--fablab-green);
+}
+
+.reveal h2 {
+  color: var(--fablab-dark);
+  border-bottom: 2px solid var(--fablab-green);
+  padding-bottom: 0.2em;
+}
+
+.reveal h3 {
+  color: var(--fablab-blue);
+}
+
+/* Lists */
+.reveal ul {
+  margin-left: 1em;
+}
+
+.reveal li {
+  margin-bottom: 0.5em;
+}
+
+/* Quotes */
+.reveal blockquote {
+  border-left: 5px solid var(--fablab-green);
+  background-color: rgba(139, 195, 74, 0.1);
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  font-style: italic;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--fablab-green);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--fablab-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tables */
+.reveal table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reveal th {
+  background-color: var(--fablab-green);
+  color: white;
+  padding: 0.5em;
+}
+
+.reveal td {
+  padding: 0.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.reveal tr:nth-child(even) {
+  background-color: rgba(139, 195, 74, 0.1);
+}
+
+/* Code */
+.reveal pre {
+  background-color: var(--fablab-light);
+  border-left: 4px solid var(--fablab-green);
+  padding: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Images */
+.reveal img {
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.reveal .footer {
+  font-size: 0.8em;
+  color: var(--fablab-dark);
+  opacity: 0.7;
+}
+
+/* Transitions */
+.reveal .slides section .fragment.fade-in {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.reveal .slides section .fragment.fade-in.visible {
+  opacity: 1;
+}
+
+.reveal .slides section .fragment.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.reveal .slides section .fragment.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Panel Tabset */
+.panel-tabset .tab-content {
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+
+.panel-tabset .nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+.panel-tabset .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: var(--fablab-dark);
+}
+
+.panel-tabset .nav-tabs .nav-link.active {
+  color: var(--fablab-green);
+  border-color: #ddd #ddd #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reveal h1 {
+    font-size: 1.8em;
+  }
+  
+  .reveal h2 {
+    font-size: 1.5em;
+  }
+  
+  .reveal h3 {
+    font-size: 1.2em;
+  }
+  
+  .columns {
+    flex-direction: column;
+  }
+  
+  .column {
+    width: 100% !important;
+  }
+}
+
